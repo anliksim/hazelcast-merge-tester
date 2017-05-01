@@ -42,6 +42,7 @@ public class LastUpdateHazelcastMergeTest extends AbstractHazelcastMergeTest {
         super.testMergePolicy();
     }
 
+    @Override
     protected void performAction() {
         IMap<Object, Object> map1 = h1.getMap(MAP_NAME);
         IMap<Object, Object> map2 = h2.getMap(MAP_NAME);
@@ -55,6 +56,7 @@ public class LastUpdateHazelcastMergeTest extends AbstractHazelcastMergeTest {
         map1.put("key2", "LatestUpdatedValue2");
     }
 
+    @Override
     protected void evaluate() {
         IMap<Object, Object> mapTest = h1.getMap(MAP_NAME);
         assertEquals("LatestUpdatedValue", mapTest.get("key1"));

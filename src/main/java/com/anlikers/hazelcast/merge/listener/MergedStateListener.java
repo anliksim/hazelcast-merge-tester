@@ -34,6 +34,7 @@ public class MergedStateListener implements LifecycleListener {
         mergeBlockingLatch.countDown();
     }
 
+    @Override
     public void stateChanged(LifecycleEvent event) {
         if (event.getState() == LifecycleEvent.LifecycleState.MERGING) {
             if (!awaitUserContinue()) {

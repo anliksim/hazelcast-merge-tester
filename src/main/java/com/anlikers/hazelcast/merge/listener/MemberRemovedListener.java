@@ -23,14 +23,17 @@ public class MemberRemovedListener implements MembershipListener {
         assertOpenEventually(memberRemovedLatch);
     }
 
+    @Override
     public void memberRemoved(MembershipEvent membershipEvent) {
         memberRemovedLatch.countDown();
     }
 
+    @Override
     public void memberAdded(MembershipEvent membershipEvent) {
         // only interested in remove events
     }
 
+    @Override
     public void memberAttributeChanged(MemberAttributeEvent memberAttributeEvent) {
         // only interested in remove events
     }
