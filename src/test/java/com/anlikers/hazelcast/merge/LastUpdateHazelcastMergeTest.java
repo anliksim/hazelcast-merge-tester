@@ -10,7 +10,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static com.anlikers.hazelcast.merge.HazelcastMergeUtil.newConfig;
-import static com.anlikers.hazelcast.merge.HazelcastMergeUtil.*;
+import static com.anlikers.hazelcast.merge.HazelcastMergeUtil.randomMapName;
+import static com.anlikers.hazelcast.merge.HazelcastMergeUtil.sleepAtLeastMillis;
 import static org.junit.Assert.assertEquals;
 
 /**

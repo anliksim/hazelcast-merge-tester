@@ -4,8 +4,6 @@ import com.anlikers.hazelcast.merge.listener.MemberRemovedListener;
 import com.anlikers.hazelcast.merge.listener.MergedStateListener;
 import com.hazelcast.core.HazelcastInstance;
 
-import static com.anlikers.hazelcast.merge.HazelcastMergeUtil.assertClusterSizeEventually;
-
 /**
  * @author Simon Anliker
  */
