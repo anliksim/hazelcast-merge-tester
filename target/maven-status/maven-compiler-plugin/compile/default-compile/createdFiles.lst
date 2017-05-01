@@ -1,4 +1,0 @@
-com\anlikers\hazelcast\AbstractHazelcastMergeTest.class
-com\anlikers\hazelcast\HazelcastMergeUtil.class
-com\anlikers\hazelcast\listener\MergedStateListener.class
-com\anlikers\hazelcast\listener\MemberRemovedListener.class
