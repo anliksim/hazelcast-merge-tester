@@ -1,5 +1,6 @@
 language: java
-script: mvn sonar:sonar \
-  -Dsonar.organization=anliksim-github \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=c67f3e403b84d11242653f1b1cfb29faa83f0c00
+addons:
+  sonarcloud:
+    organization: "anliksim-github"
+script:
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
