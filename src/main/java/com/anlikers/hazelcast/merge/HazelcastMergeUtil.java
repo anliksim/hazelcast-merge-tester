@@ -13,6 +13,8 @@ import java.util.concurrent.CountDownLatch;
  * @see HazelcastTestSupport
  */
 public class HazelcastMergeUtil {
+    
+    public static final String somethingthatshouldbeflagged = "abc";
 
     private HazelcastMergeUtil() {
         // utility constructor
